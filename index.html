@@ -5,12 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/edba84fd66.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>SuperMercado A</title>
 </head>
 
-<body>
-    
+<body onresize="resize()">
+
+    <header>
+        <div>
+            <h1>Logo</h1>
+            <form action="#" method="post">
+                <input type="search" name="pesquisa" id="pesquisa">
+            </form>
+            <i class="fa-solid fa-bars" id="btnMenu"></i>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="">Carnes</a></li>
+                <li><a href="">Margarinas</a></li>
+                <li><a href="">Grãos</a></li>
+                <li><a href="">Temperos</a></li>
+                <li><a href="">Doces</a></li>
+                <li><a href="">Bebidas</a></li>
+                <li><a href="">Higiene/Limpeza</a></li>
+                <li><a href="">Verduras</a></li>
+                <li><a href="">Frutas</a></li>
+                <li><a href="">Peixes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+
+        function resize() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        btnMenu.addEventListener('click', () => {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        })
+
+    </script>
+
 </body>
 
 </html>

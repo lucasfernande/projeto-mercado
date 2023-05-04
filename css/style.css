@@ -1,1 +1,41 @@
 @charset "UTF-8";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header > div {
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div > form {
+    display: none;
+}
+
+div > i#btnMenu {
+    font-size: 26px;
+}
+
+nav {
+    background-color: cornflowerblue;
+    display: none;
+}
+
+nav > ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul li a {
+    color: white;
+    text-decoration: none;
+}
