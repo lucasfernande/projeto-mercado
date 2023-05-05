@@ -1,9 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 header > div {
@@ -15,27 +17,110 @@ header > div {
     justify-content: space-between;
 }
 
-div > form {
+header > div > figure {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+header > div img {
+    width: 90px;
+}
+
+form.campo-pesquisa {
     display: none;
+    width: 400px;
+    border: 1px solid #dedbdb;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-div > i#btnMenu {
-    font-size: 26px;
+form.campo-pesquisa input, form.campo-pesquisa button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
 }
 
-nav {
+form.campo-pesquisa input {
+    width: calc(100% - 45px);
+}
+
+form.campo-pesquisa button {
+    background: transparent;
+    color: #ccc;
+    width: 40px;
+}
+
+div > span#btnMenu {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+nav#menu {
     background-color: cornflowerblue;
     display: none;
+    padding-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-nav > ul {
+nav#menu > ul {
     text-align: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav > ul li a {
+nav#menu > ul li a {
+    display: block;
+    padding: 15px 20px;
     color: white;
     text-decoration: none;
+}
+
+nav#menu > ul li a:hover {
+    background-color: blue;
+}
+
+nav#menu > form.campo-pesquisa {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.open {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    header > div {
+        justify-content: space-around;
+    }
+
+    div > form.campo-pesquisa {
+        display: block;
+    }
+
+    div > span#btnMenu {
+        display: none;
+    }
+
+    nav#menu {
+        display: block;
+        padding: 0;
+    }
+
+    nav#menu > ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav#menu > form.campo-pesquisa {
+        display: none;
+    }
 }
