@@ -170,6 +170,7 @@ section.produtos > figure figcaption {
 
 section.produtos > figure p {
     font-size: 1.5em;
+    font-weight: bold;
     padding: 20px 0;
 }
 
@@ -198,6 +199,15 @@ section.produtos > figure button:hover {
 
 section#margarinas {
     background-image: url(../assets/img/margarinas.jpg);
+    background-position: center center;
+}
+
+section#graos {
+    background-image: url(../assets/img/graos.jpg);
+}
+
+section#temperos {
+    background-image: url(../assets/img/temperos.jpg);
     background-position: center center;
 }
 
