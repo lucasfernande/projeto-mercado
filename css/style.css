@@ -128,11 +128,6 @@ section.parallax {
     height: 300px;
 }
 
-section#carnes {
-    background-image: url(../assets/img/carnes.jpg);
-    background-position: center center;
-}
-
 section.produtos {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -193,6 +188,10 @@ section.produtos > figure button {
 section.produtos > figure button:hover {
     background-color: #fff;
     color: var(--azul-escuro);
+}
+
+section#carnes {
+    background-image: url(../assets/img/carnes.jpg);
 }
 
 section#margarinas {
