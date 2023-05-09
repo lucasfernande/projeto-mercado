@@ -232,6 +232,50 @@ section#peixes {
     background-image: url(../assets/img/peixes.jpg);
 }
 
+section.contato {
+    font-family: 'Rubik', sans-serif;
+    padding: 10px;
+}
+
+section.contato h1 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+section.contato > form {
+    display: flex;
+    flex-direction: column;
+}
+
+section.contato > form label {
+    font-size: 1.1em;
+    padding: 10px 0;
+}
+
+section.contato > form input, form textarea {
+    outline: none;
+    resize: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    padding: 7.5px;
+    border: 1px solid #ccc;
+    border-radius: 7.5px;
+}
+
+section.contato > form input[type=submit] {
+    background-color: var(--azul-escuro);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+section.contato > form input[type=submit]:hover {
+    background-color: var(--azul-claro);
+}
+
 @media screen and (min-width: 768px) {
     header > div {
         justify-content: space-around;
