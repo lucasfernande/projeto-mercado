@@ -302,7 +302,7 @@ footer div.redes h2 {
 
 footer div.redes i {
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 15px;
     padding: 7.5px;
     background-color: white;
@@ -311,12 +311,14 @@ footer div.redes i {
 }
 
 footer div.redes i::before {
-    width: 32px;
+    width: 24px;
     display: inline-block;
 }
 
 footer ul.links {
     display: flex;
+    flex-direction: column; 
+    list-style-position: inside;
 }
 
 footer ul.links li {
@@ -336,6 +338,7 @@ footer div.direitos {
     background-color: #101a23;
     width: 100%;
     margin-top: 15px;
+    font-size: 0.9em;
     line-height: 40px;
     color: #ccc;
 }
