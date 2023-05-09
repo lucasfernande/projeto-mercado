@@ -108,10 +108,6 @@ nav#menu > form.campo-pesquisa {
     background-color: #fff;
 }
 
-.open {
-    display: block;
-}
-
 /* Fim Header */
 
 main {
@@ -152,10 +148,6 @@ section.produtos > figure {
     border: 1px solid #ccc;
     border-radius: 15px;
     margin: 5px;
-}
-
-section.produtos > figure div.img {
-    height: 210px;
 }
 
 section.produtos > figure div img {
@@ -213,6 +205,7 @@ section#graos {
 
 section#temperos {
     background-image: url(../assets/img/temperos.jpg);
+    background-position: bottom center;
 }
 
 section#doces {
@@ -220,8 +213,24 @@ section#doces {
 }
 
 section#bebidas {
-    background-image: url(../assets/img/bebidas.jpg);
-   
+    background-image: url(../assets/img/bebidas.jpg); 
+}
+
+section#limpeza {
+    background-image: url(../assets/img/limpeza.jpg);
+    background-position: bottom center;
+}
+
+section#verduras {
+    background-image: url(../assets/img/verduras.jpg);
+}
+
+section#frutas {
+    background-image: url(../assets/img/frutas.jpg);
+}
+
+section#peixes {
+    background-image: url(../assets/img/peixes.jpg);
 }
 
 @media screen and (min-width: 768px) {
