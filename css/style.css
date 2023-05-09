@@ -295,7 +295,7 @@ footer div {
     text-align: center;
 }
 
-footer div.redes h2 {
+footer h2 {
     color: white;
     font-size: 1.7em;
 }
@@ -315,21 +315,16 @@ footer div.redes i::before {
     display: inline-block;
 }
 
-footer ul.links {
+footer div.links {
     display: flex;
     flex-direction: column; 
-    list-style-position: inside;
+    margin-right: 90px;
+    text-align: left;
 }
 
-footer ul.links li {
-    margin: 0 15px;
-}
-
-footer ul.links li::marker {
-    color: #ccc;
-}
-
-footer ul.links li a {
+footer div.links a {
+    display: inline-block;
+    padding: 5px;
     color: #ccc;
     text-decoration: none;
 }
