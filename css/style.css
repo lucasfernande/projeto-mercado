@@ -232,6 +232,8 @@ section#peixes {
     background-image: url(../assets/img/peixes.jpg);
 }
 
+/* Fim do catálogo */
+
 section.contato {
     font-family: 'Rubik', sans-serif;
     padding: 10px;
@@ -261,10 +263,12 @@ section.contato > form input, form textarea {
     padding: 7.5px;
     border: 1px solid #ccc;
     border-radius: 7.5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 section.contato > form input[type=submit] {
     background-color: var(--azul-escuro);
+    border: 0;
     color: white;
     padding: 10px;
     margin: 10px 0;
@@ -275,6 +279,67 @@ section.contato > form input[type=submit] {
 section.contato > form input[type=submit]:hover {
     background-color: var(--azul-claro);
 }
+
+/* Fim do formulário */
+
+footer {
+    background-color: var(--azul-escuro);
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer div.redes h2 {
+    color: white;
+    font-size: 1.7em;
+}
+
+footer div.redes i {
+    display: inline-block;
+    font-size: 2em;
+    margin: 15px;
+    padding: 7.5px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer div.redes i::before {
+    width: 32px;
+    display: inline-block;
+}
+
+footer ul.links {
+    display: flex;
+}
+
+footer ul.links li {
+    margin: 0 15px;
+}
+
+footer ul.links li::marker {
+    color: #ccc;
+}
+
+footer ul.links li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer div.direitos {
+    background-color: #101a23;
+    width: 100%;
+    margin-top: 15px;
+    line-height: 40px;
+    color: #ccc;
+}
+
 
 @media screen and (min-width: 768px) {
     header > div {
