@@ -182,7 +182,7 @@ section.produtos {
     margin-bottom: 25px;
 }
 
-section.produtos > figure {
+figure.card-produto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -193,7 +193,7 @@ section.produtos > figure {
     margin: 5px;
 }
 
-section.produtos > figure div img {
+figure.card-produto div img {
     padding: 0 10px;
     max-height: 200px;
     max-width: 300px;
@@ -203,25 +203,25 @@ section.produtos > figure div img {
     margin: auto;
 }
 
-section.produtos > figure figcaption {
+figure.card-produto figcaption {
     text-align: justify;
     font-size: 0.9em;
     margin-top: 25px;
     padding: 0 15px;
 }
 
-section.produtos > figure p {
+figure.card-produto p {
     font-size: 1.5em;
     font-weight: bold;
     padding: 20px 0;
 }
 
-section.produtos > figure button span {
+figure.card-produto button span {
     vertical-align: middle;
     padding-right: 10px;
 }
 
-section.produtos > figure button {
+figure.card-produto button {
     padding: 5px 0;
     width: 90%;
     border: 1px solid var(--azul-escuro);
@@ -234,7 +234,7 @@ section.produtos > figure button {
     transition: .25s;
 }
 
-section.produtos > figure button:hover {
+figure.card-produto button:hover {
     background-color: #fff;
     color: var(--azul-escuro);
 }
@@ -416,5 +416,13 @@ footer div.direitos {
 
     nav#menu > form.campo-pesquisa {
         display: none;
+    }
+
+    section.produtos {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    figure.card-produto figcaption {
+        font-size: 1em;
     }
 }
