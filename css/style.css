@@ -499,3 +499,9 @@ div.direitos {
         grid-column-start: span 2;
     }
 }
+
+@media screen and (max-width: 300px) {
+    header figcaption {
+        display: none;
+    }
+}
