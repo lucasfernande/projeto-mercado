@@ -307,6 +307,11 @@ section.contato > form {
     flex-direction: column;
 }
 
+section.contato > form div {
+    display: flex;
+    flex-direction: column;
+}
+
 section.contato > form label {
     font-size: 1.1em;
     padding: 10px 0;
@@ -325,9 +330,9 @@ section.contato > form input, form textarea {
 
 section.contato > form input[type=submit] {
     background-color: var(--azul-escuro);
-    border: 0;
     color: white;
-    padding: 10px;
+    border: 0;
+    padding: 8.5px;
     margin: 10px 0;
     cursor: pointer;
     transition: .2s;
@@ -446,6 +451,26 @@ div.direitos {
 
     figure.card-produto:nth-child(4n+2) {
         border-right: 1px solid #ccc;
+    }
+
+    section.contato > form {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section.contato > form div {
+        width: 50%;
+        margin: 10px;
+    }
+
+    section.contato > form input[type=submit] {
+        margin: 10px 0 0 0;
+        align-self: flex-start;
+        width: 50%;
+    }
+
+    section.contato > form textarea {
+        flex-grow: 2;
     }
 
     footer {
