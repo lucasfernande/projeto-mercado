@@ -80,7 +80,7 @@ nav#menu {
     background-color: var(--azul-claro);
     display: none;
     padding-top: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 nav#menu > ul {
@@ -97,7 +97,7 @@ nav#menu > ul li a {
 }
 
 nav#menu > ul li a:hover {
-    background-color: #32376a;
+    background-color: #343971;
 }
 
 nav#menu > form.campo-pesquisa {
@@ -182,15 +182,17 @@ section.produtos {
     margin-bottom: 25px;
 }
 
+figure.card-produto:nth-child(odd) {
+    border-right: 1px solid #ccc;
+}
+
 figure.card-produto {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    margin: 5px;
+    margin: 5px 0;
 }
 
 figure.card-produto div img {
@@ -422,6 +424,10 @@ div.direitos {
 
     figure.card-produto figcaption {
         font-size: 1em;
+    }
+
+    figure.card-produto:nth-child(4n+2) {
+        border-right: 1px solid #ccc;
     }
 
     footer {
