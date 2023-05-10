@@ -119,13 +119,14 @@ section.banner {
     grid-template-columns: 50% 50%;
     align-items: center;
     font-family: 'Rubik', sans-serif;
+    padding: 50px 0;
 }
 
-section.banner div.img-banner {
+div.img-banner {
     text-align: right;
 }
 
-section.banner div.img-banner img {
+div.img-banner img {
     width: 100%;
 }
 
@@ -156,6 +157,11 @@ div.conteudo-banner a {
     border: 1px solid var(--azul-escuro);
     border-radius: 15px;
     cursor: pointer;
+    transition: .2s;
+}
+
+div.conteudo-banner a:hover {
+    background-color: var(--azul-claro);
 }
 
 div.conteudo-banner a i {
@@ -418,12 +424,24 @@ div.direitos {
         display: none;
     }
 
-    section.produtos {
-        grid-template-columns: 25% 25% 25% 25%;
+    section.banner {
+        padding: 25px 0;
     }
 
-    figure.card-produto figcaption {
-        font-size: 1em;
+    div.conteudo-banner {
+        font-size: 1.2em;
+    }
+
+    div.conteudo-banner a {
+        margin-top: 35px;
+    }
+
+    div.img-banner img {
+        width: 90%;
+    }
+
+    section.produtos {
+        grid-template-columns: 25% 25% 25% 25%;
     }
 
     figure.card-produto:nth-child(4n+2) {
