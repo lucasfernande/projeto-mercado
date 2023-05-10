@@ -114,6 +114,53 @@ main {
     font-family: 'Inter', sans-serif;
 }
 
+section.banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+section.banner div.img-banner {
+    text-align: right;
+}
+
+section.banner div.img-banner img {
+    width: 90%;
+}
+
+div.conteudo-banner {
+    text-align: center;
+    padding: 10px 0;
+}
+
+div.conteudo-banner h1 {
+    padding: 15px 0;
+    color: var(--azul-escuro);
+}
+
+div.conteudo-banner p {
+    color: rgb(92, 91, 91);
+}
+
+div.conteudo-banner a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 15px;
+    background-color: var(--azul-escuro);
+    border: 1px solid var(--azul-escuro);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+div.conteudo-banner a i {
+    margin-left: 10px;
+}
+
 article.categoria h1 {
     text-align: center;
     padding: 25px 0;
@@ -157,6 +204,7 @@ section.produtos > figure div img {
 
 section.produtos > figure figcaption {
     text-align: justify;
+    font-size: 0.9em;
     margin-top: 25px;
     padding: 0 15px;
 }
@@ -306,6 +354,7 @@ footer div.redes i {
     margin: 15px;
     padding: 7.5px;
     background-color: white;
+    color: #101a23;
     border-radius: 50%;
     cursor: pointer;
 }
