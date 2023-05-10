@@ -1,11 +1,7 @@
 function resize() {
-    //const banner = document.querySelector('.img-banner')
     if (window.innerWidth >= 768) {
         menu.style.display = 'block'
-        //banner.innerHTML = '<img src="assets/img/banner-desktop.jpg">'
-    } // else {
-        //banner.innerHTML = '<img src="assets/img/cesta.png">'
-    //}
+    }
 }
 
 btnMenu.addEventListener('click', () => {
