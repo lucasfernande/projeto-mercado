@@ -131,7 +131,8 @@ section.banner div.img-banner img {
 
 div.conteudo-banner {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 5px 20px;
+    font-size: 0.9em;
 }
 
 div.conteudo-banner h1 {
